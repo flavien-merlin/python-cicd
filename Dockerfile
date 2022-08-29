@@ -5,7 +5,7 @@ WORKDIR /app
 COPY app.py pylint.cfg ./
 WORKDIR /wheels
 COPY requierements.txt ./
-RUN pip wheel -r requierements.txt
+# RUN pip wheel -r requierements.txt
 
 # --- Lint --- #
 FROM eeacms/pylint:latest as linting
