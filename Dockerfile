@@ -42,4 +42,3 @@ RUN pip install -r /wheels/requierements.txt -f /wheels
 COPY --from=builder /app/*.py ./
 
 CMD ["python3" , "app.py"]
-
