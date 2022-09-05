@@ -8,9 +8,8 @@ The app will run every X time according to the parameter you set on Jenkins
 ##### Build and run the app with Jenkins:
 
 ```bash
-$ In order to use Sonarqube, you must have the server running.
-$ Jenkins :
-$ Configure two creds with your AWS config and credentials.
+$ Build the image with Jenkins :
+$ Configure two creds for AWS : one cred with secret file "config" and one with secret file "credentials", both files are taken from your .aws/ folder.
 $ Configure pipeline job
 $ on the pipeline tab choose pipeline script from scm :
 $ SCM : Git, 
